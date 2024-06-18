@@ -1,0 +1,4 @@
+@for (item of missions; track item.id) {
+    <ul>{{item| json}} <button (click)="deleteMission(item.id)">Remove</button></ul>
+    
+}
